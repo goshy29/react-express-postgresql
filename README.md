@@ -34,4 +34,5 @@ Backend: Contains all Express.js server-side code and database logic.
 4. At the Second Terminal to install Backend dependencies, type "cd backend" then run: npm install
 5. To start the Frontend development server, in the root directory run: npm start
 6. To start the Backend server, in the backend directory run: npm start
-7. Open the application in your browser: http://localhost:3000 
+7. Ensure PostgreSQL is installed and running
+8. Open the application in your browser: http://localhost:3000 
