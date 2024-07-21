@@ -43,3 +43,16 @@ Backend: Contains all Express.js server-side code and database logic.
 3. country: United States of America
 4. image url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg/1280px-Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg
 5. description: Central Park is the fifth-largest park in New York City, behind Pelham Bay Park, the Staten Island Greenbelt, Van Cortlandt Park, and Flushing Meadows–Corona Park, with an area of 843 acres (341 ha; 1.317 sq mi; 3.41 km2).
+
+## PostgreSQL Connection:
+You will find this connection code at directory "backend/utils/db-connection.js".
+
+const sequelize = new Sequelize("database", "username", "password", {
+    host: "localhost",
+    dialect: "postgres"
+});
+
+Replace that sequelize connection properties("database", "username", "password") with your own database credentials for PostgreSQL.
+
+**Note: When you start the application for first time, after successfully post a place by you, database table "place" will be automatically created by Sequelize, if it does not already exist and you are ready to go.**
+
