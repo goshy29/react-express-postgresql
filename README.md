@@ -54,5 +54,5 @@ const sequelize = new Sequelize("database", "username", "password", {
 
 Replace that sequelize connection properties("database", "username", "password") with your own database credentials for PostgreSQL.
 
-**Note: When you start the application for first time, after successfully post a place by you, database table "place" will be automatically created by Sequelize, if it does not already exist and you are ready to go.**
+**Note: When you start the application for first time, after successfully post a place by you, database table "place" will be automatically created by Sequelize and you are ready to go.**
 
